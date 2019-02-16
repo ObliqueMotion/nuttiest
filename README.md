@@ -3,8 +3,8 @@
 The nuttiest way to write unit tests in C++.
 
 ## Description
-Nuttiest (an anagram for "unit test") is lightweight C++ framework for writing single-threaded unit tests with simple comparisons. 
-The syntax is inspired by Rust's syntax for unit testing. I made this for myself, but anyone may use it as he or she sees fit.
+Nuttiest (an anagram for "unit test") is lightweight C++ framework for writing unit tests with simple comparisons. 
+The syntax is inspired by Rust's syntax for unit testing. I made this for myself, but anyone may use it as he or she sees fit. Unit tests will run sequentially and are not suited to run in parallel at this time. 
 
 
 ## How to Integrate into a Project
