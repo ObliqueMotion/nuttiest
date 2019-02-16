@@ -14,7 +14,7 @@ The syntax is inspired by Rust's syntax for unit testing. I made this for myself
 - By default, `nuttiest` will output to `std::cout`.   
 You can change this by modifying the `STREAM` definition at the top of `nuttiest.hpp`.  
 - By default, `nuttiest` will print colored output using escape characters.
-You can disable this by commenting out the `COLORED_OUTPUT` definition at the top of `nuttiest.hpp`.
+You can disable this by commenting out the `COLOR_OUTPUT` definition at the top of `nuttiest.hpp`.
 
 ## Quick Reference
 
