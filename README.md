@@ -70,7 +70,7 @@ int main() {
 
 ### Output
 
-![Alt text](/screenshots/example-output.png?raw=true "Output")
+![Alt text](screenshots/example-output.png?raw=true "Output")
 
 ## API
 ---
