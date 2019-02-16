@@ -13,7 +13,7 @@ namespace nuttiest {
     // Globals & Configuration Variables
     //=====================================================================
 
-    /// Just because I like this syntax.
+    /// Just because I like this syntax, and it reminds me of Rust.
     #define let auto
 
     /// Comment this to disable colored output.
