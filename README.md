@@ -12,7 +12,7 @@ The syntax is inspired by Rust's syntax for unit testing. I made this for myself
 - Add `#include "nuttiest.hpp"` to your unit tests file.  
 - Add `using namespace nuttiest;`  (optional, but recommended)
 - By default, `nuttiest` will output to `std::cout`.   
-You can change this by modifying the `DEFAULT_STREAM` definition at the top of `nuttiest.hpp`.  
+You can change this by modifying the `STREAM` definition at the top of `nuttiest.hpp`.  
 - By default, `nuttiest` will print colored output using escape characters.
 You can change this by commenting out the `COLORED_OUTPUT` definition at the top of `nuttiest.hpp`.
 
