@@ -13,7 +13,7 @@ namespace nuttiest {
     // Globals & Configuration Variables
     //=====================================================================
 
-    /// Just because I like this syntax.
+    /// Just because I like this syntax, and it reminds me of Rust.
     #define let auto
 
     /// Comment this to disable colored output.
@@ -502,9 +502,9 @@ namespace nuttiest {
     }
 
     /// Prints the result of a regular (assert_*()) comparison test.
-    template <typename F, typename L, typename R>
+    template <typename Functor, typename L, typename R>
     static void _print_result(
-        const F& functor,
+        const Functor& functor,
         const L& lhs,
         const R& rhs,
         str_literal file_name,
@@ -528,9 +528,9 @@ namespace nuttiest {
     }
 
     /// Prints the result of a memory (mem_*()) comparison test.
-    template <typename F>
+    template <typename Functor>
     static void _print_result(
-        const F& functor,
+        const Functor& functor,
         void const * const lhs,
         void const * const rhs,
         const size_t& num_bytes,
