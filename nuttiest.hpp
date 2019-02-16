@@ -481,7 +481,7 @@ namespace nuttiest {
     {
         if (__throw_flag) { return; }
         ++Private::passed_tests;
-        stream << __FILE_INFO << __PASS_TEST;
+        stream << __FILE_INFO << __PASS_TEST << endl;
     }
 
     /// Explicitly fails a test, providing a reason.
