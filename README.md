@@ -139,22 +139,22 @@ fail_test(const string& reason)
 ---
 **Description:** Comparisons for any types. (Assumes proper operators overloaded)
 ```C++
-assert_eq(const L& lhs, const R& rhs) // lhs == rhs
-assert_lt(const L& lhs, const R& rhs) // lhs <  rhs
-assert_gt(const L& lhs, const R& rhs) // lhs >  rhs
-assert_ne(const L& lhs, const R& rhs) // lhs != rhs
-assert_le(const L& lhs, const R& rhs) // lhs <= rhs
-assert_ge(const L& lhs, const R& rhs) // lhs >= rhs
+assert_eq(const L& lhs, const R& rhs); // lhs == rhs
+assert_lt(const L& lhs, const R& rhs); // lhs <  rhs
+assert_gt(const L& lhs, const R& rhs); // lhs >  rhs
+assert_ne(const L& lhs, const R& rhs); // lhs != rhs
+assert_le(const L& lhs, const R& rhs); // lhs <= rhs
+assert_ge(const L& lhs, const R& rhs); // lhs >= rhs
 ```
   
   
 ---
 **Description:** Comparisons for raw memory. 
 ```C++
-assert_eq(void const * const lhs, void const * const rhs, const size_t& num_bytes) // lhs == rhs
-assert_lt(void const * const lhs, void const * const rhs, const size_t& num_bytes) // lhs <  rhs
-assert_gt(void const * const lhs, void const * const rhs, const size_t& num_bytes) // lhs >  rhs
-assert_ne(void const * const lhs, void const * const rhs, const size_t& num_bytes) // lhs != rhs
-assert_le(void const * const lhs, void const * const rhs, const size_t& num_bytes) // lhs <= rhs
-assert_ge(void const * const lhs, void const * const rhs, const size_t& num_bytes) // lhs >= rhs
+mem_eq(void const * const lhs, void const * const rhs, const size_t& num_bytes); // lhs == rhs
+mem_lt(void const * const lhs, void const * const rhs, const size_t& num_bytes); // lhs <  rhs
+mem_gt(void const * const lhs, void const * const rhs, const size_t& num_bytes); // lhs >  rhs
+mem_ne(void const * const lhs, void const * const rhs, const size_t& num_bytes); // lhs != rhs
+mem_le(void const * const lhs, void const * const rhs, const size_t& num_bytes); // lhs <= rhs
+mem_ge(void const * const lhs, void const * const rhs, const size_t& num_bytes); // lhs >= rhs
 ```
