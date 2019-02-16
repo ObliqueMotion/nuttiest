@@ -44,7 +44,7 @@ namespace nuttiest {
 
     /// Enables exception handling. Test will fail if an exception is thrown.
     #define may_throw(y)\
-        try { y; pass_test(); }\
+        try { y; }\
         catch(const std::exception& e) { fail_test(e.what()); }\
         catch(...) { fail_test("Unknown Exception"); }
     
