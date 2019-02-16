@@ -76,7 +76,7 @@ int main() {
 ---
 **Description:** Prints a new section divider for a logical grouping of tests.  
 ```C++
-section(const string&)
+section(const string& section_name)
 ```  
 
   
