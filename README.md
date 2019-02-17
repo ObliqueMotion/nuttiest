@@ -63,8 +63,7 @@ int main() {
         })
     }
 
-    summary();
-    return 0;
+    return summary();
 }
 ```
 

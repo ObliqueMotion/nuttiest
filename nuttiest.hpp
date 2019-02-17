@@ -122,7 +122,7 @@ namespace nuttiest {
     static void _print_section(std::ostream& stream = STREAM);
 
     /// Prints a summary of all passed/failed tests.
-    static void _print_summary(std::ostream& stream = STREAM);
+    static int _print_summary(std::ostream& stream = STREAM);
 
     /// The different types of comparisons available.
     enum Comparison {
@@ -360,7 +360,7 @@ namespace nuttiest {
         // Friend Functions
         //=========================
         
-        friend void _print_summary(std::ostream&);
+        friend int _print_summary(std::ostream&);
 
         friend void _explicit_pass(
             str_literal,
@@ -459,7 +459,7 @@ namespace nuttiest {
     }
 
     /// Print a _print_summary of all passed and failed tests at the end of your file.
-    static void _print_summary(std::ostream & stream) {
+    static int _print_summary(std::ostream & stream) {
         auto total_tests = Private::passed_tests + Private::failed_tests;
         auto digits = std::to_string(total_tests).length();
         stream << "\n\n======================RESULTS======================\n" << std::endl
@@ -471,6 +471,7 @@ namespace nuttiest {
                     : stream <<   red(std::setw(digits) << Private::failed_tests)
                );
                stream << " }" << std::endl << std::endl;
+        return 0;
     }
 
     /// Explicitly passes a test.
