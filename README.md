@@ -60,6 +60,7 @@ int main() {
         // This test will act as normal, but will catch exceptions.
         unit_test("fail on an exception") may_throw({
             vec.at(8675309); // Will throw for Jenny.
+            pass_test();
         })
     }
 
