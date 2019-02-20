@@ -52,7 +52,7 @@ int main() {
         // Computing, but ignoring other assertions or explicit pass/fails.
         unit_test("expect an exception") must_throw({
             assert_eq(1, 2);
-            pass_test();
+            pass_test(); // Will not count
             fail_test("This will not count, either.");
             vec.at(8675309); // Will throw for Jenny.
         })
@@ -60,7 +60,7 @@ int main() {
         // This test will act as normal, but will catch exceptions.
         unit_test("fail on an exception") may_throw({
             vec.at(8675309); // Will throw for Jenny.
-            pass_test();
+            pass_test(); // Will never make it because of throw.
         })
     }
 
